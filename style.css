@@ -1,0 +1,79 @@
+.cartao {
+  background-color: #ffffff;       /* Fundo branco para destacar */
+  padding: 40px;                 /* Espaço generoso dentro do cartão */
+  border-radius: 24px;           /* Cantos bem arredondados e modernos */
+  
+  /* Esse é o segredo do acabamento: uma sombra bem suave */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.01); 
+  
+  max-width: 400px;              /* Largura máxima para não esticar demais */
+  width: 90%;                    /* Responsividade para celular */
+  text-align: center;            /* Centraliza os textos dentro do cartão */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.botao-principal{
+    display: inline-block;/* Adicione isso para o link aceiter altura e largura*/
+    text-decoration: none; /*remove aquele sublinhado azul padrão de links*/
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 220px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cartao h1{
+  font-size: 1.8rem;
+  color: #222;
+  margin: 0 0 10px 0;
+}
+.cartao p{
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+.lista link{
+  width: 100%;
+  max-width: 250px;
+}
+body{
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+.botao-principal:hover{
+  background-color: #0056b3;
+  transform: translate(-2px);
+}
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.cartao h2 {
+    font-size: 1.4rem;
+    color: #222;
+    margin: 20px 0 10px 0;
+}
+.cartao ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.cartao li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
