@@ -4,7 +4,7 @@
   border-radius: 24px;           /* Cantos bem arredondados e modernos */
   
   /* Esse é o segredo do acabamento: uma sombra bem suave */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.01); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
   
   max-width: 400px;              /* Largura máxima para não esticar demais */
   width: 90%;                    /* Responsividade para celular */
@@ -19,7 +19,7 @@
     background-color: #007BFF;
     color: #fff;
     padding: 10px 15px;
-    border-radius: 8px;
+    border-radius: 30px;
     font-weight: bold;
     margin-bottom: 15px;
     width: 100%;
@@ -27,6 +27,9 @@
     border: none;
     cursor: pointer;
     transition: 0.3s;
+}
+.botao-contato{
+  background-color: #6c757d;
 }
 .cartao h1{
   font-size: 1.8rem;
@@ -37,10 +40,6 @@
   font-size: 1rem;
   color: #666;
   margin-bottom: 30px;
-}
-.lista link{
-  width: 100%;
-  max-width: 250px;
 }
 body{
   background-color: #f0f2f5;
@@ -53,7 +52,10 @@ body{
 }
 .botao-principal:hover{
   background-color: #0056b3;
-  transform: translate(-2px);
+  transform: translateY(-5px);
+}
+.botao-contato:hover{
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .foto-perfil {
     width: 100px;
@@ -76,4 +78,18 @@ body{
     font-size: 1rem;
     color: #666;
     margin-bottom: 5px;
+    text-align: center;
+}
+@media (max-width: 480px) {
+  .cartao {
+    padding: 20px; /* Reduzimos o espaço interno para o texto ganhar área */
+  }
+  
+  .cartao h1 {
+    font-size: 1.5rem; /* Diminuímos um pouco a fonte do nome */
+  }
+  .foto-perfil{
+    width: 80px;
+    height: 80px;
+  }
 }
