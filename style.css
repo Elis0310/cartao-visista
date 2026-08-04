@@ -1,79 +1,98 @@
-.cartao {
-  background-color: #ffffff;       /* Fundo branco para destacar */
-  padding: 40px;                 /* Espaço generoso dentro do cartão */
-  border-radius: 24px;           /* Cantos bem arredondados e modernos */
-  
-  /* Esse é o segredo do acabamento: uma sombra bem suave */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.01); 
-  
-  max-width: 400px;              /* Largura máxima para não esticar demais */
-  width: 90%;                    /* Responsividade para celular */
-  text-align: center;            /* Centraliza os textos dentro do cartão */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.botao-principal{
-    display: inline-block;/* Adicione isso para o link aceiter altura e largura*/
-    text-decoration: none; /*remove aquele sublinhado azul padrão de links*/
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    width: 100%;
-    max-width: 220px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.cartao h1{
-  font-size: 1.8rem;
-  color: #222;
-  margin: 0 0 10px 0;
-}
-.cartao p{
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 30px;
-}
-.lista link{
-  width: 100%;
-  max-width: 250px;
-}
-body{
-  background-color: #f0f2f5;
+body {
+  background-color: #f4f5f7;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
-.botao-principal:hover{
-  background-color: #0056b3;
-  transform: translate(-2px);
+
+.cartao {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(26, 43, 76, 0.12);
+  border-top: 4px solid #1a2b4c;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .foto-perfil {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    object-fit: cover;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 3px solid #1a2b4c;
 }
+
+.cartao h1 {
+  font-size: 1.6rem;
+  color: #1a2b4c;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.cartao p {
+  font-size: 0.95rem;
+  color: #5a6472;
+  margin-bottom: 25px;
+}
+
 .cartao h2 {
-    font-size: 1.4rem;
-    color: #222;
-    margin: 20px 0 10px 0;
+  font-size: 1.1rem;
+  color: #1a2b4c;
+  margin: 20px 0 12px 0;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
 }
+
 .cartao ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
 }
+
 .cartao li {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 5px;
+  background-color: #eef1f6;
+  color: #2d4a7c;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.botao-principal {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #2d4a7c;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 260px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao-principal:hover {
+  background-color: #1a2b4c;
+  transform: translateY(-1px);
 }
